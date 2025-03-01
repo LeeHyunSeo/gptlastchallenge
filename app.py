@@ -44,8 +44,9 @@ api_key = os.getenv("OPENAI_API_KEY", st.session_state.get("openai_api_key", "")
 if api_key :
     client.api_key = api_key
     def get_ticker(inputs):
-        ddg = DuckDuckGoSearchAPIWrapper()
+        ddg = DuckDuckGoSearchAPIWrapper(backend="html")
         company_name = inputs["company_name"]
+        time.sleep(5)
         return ddg.run(f"Ticker symbol of {company_name}")
 
 
