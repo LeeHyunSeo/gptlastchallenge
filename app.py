@@ -24,7 +24,7 @@ st.markdown(
 """
 )
 
-assistant_id = "asst_pchemeRDurnq0XNMF6WsM2Sp"
+assistant_id = "asst_UiN9twcE5DAC9uPglNceet0M"
 
 query = st.chat_input("AssistantGPT에게 주식 정보를 물어보세요!")
 
